@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --link-text-color-dark: "#0861f1";
+    
+    --default-light-theme-color: rgba(255,255,255,0.9);
+    --default-dark-theme-color: rgba(0,0,0,0.9);
+    --box-shadow-and-border-color: yellowgreen;
+    --theme-button-border-size: 2.5px;
+    color-scheme:dark light;
+}
+h1 {
+    text-align: center;
+    transition: background-color, 300ms ease-in-out;
+}
+html {
+     
+}
+body {
+   
+    transition: background-color, 300ms ease-in-out;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 65px;
+    outline: none;
+    background: none;
+    border: 2.5px solid var(--box-shadow-and-border-color);
+    cursor: pointer;
+    transition: all, 0.2s ease-in-out;
+    p {
+        font-size: 25px;
+        transition: font-size, 300ms ease-in-out;
+    }
+    i {
+        margin-right: 10px;
+        margin-top: 2.5px;
+        font-size: 50px;
+    }
+    &:hover, &:focus {
+        box-shadow: 0 0 30px var(--box-shadow-and-border-color);
+        transition: box-shadow, 200ms ease-in-out;
+    }
+}
+
+
+@media only screen and (min-width: 800px) {
+    .btn {
+        i {
+            font-size: 100px;
+        }
+        p {
+            font-size: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .btn {
+        p {
+            font-size: 20px;
+        }
+    }
+}

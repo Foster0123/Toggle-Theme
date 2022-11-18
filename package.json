@@ -1,0 +1,13 @@
+{
+  "name": "theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vite --config vite.config.js --host"
+  },
+  "devDependencies": {
+    "sass": "^1.56.1",
+    "vite": "^3.2.4"
+  }
+}
